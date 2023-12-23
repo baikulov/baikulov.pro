@@ -21,7 +21,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Что такое dbt.md",
+                "file": "blog/posts/blog post.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Что такое dbt.md",
+                "file": "blog/posts/blog post.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Что такое dbt.md",
+                "file": "blog/posts/blog post.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Что такое dbt.md"
+                "file": "blog/posts/blog post.md"
               }
             }
           }
@@ -157,9 +157,14 @@
   },
   "active": "3cbf163101ef2a1f",
   "lastOpenFiles": [
-    "Pasted image 20231223212224.png",
-    "Что такое dbt.md",
-    "blog/posts/Что такое dbt.md",
-    "blog/posts/hello-world 1.md"
+    "blog/posts/hello-world.md",
+    "blog/posts/blog post.md",
+    "Topic 1/Что такое dbt.md",
+    "Topic 1/Note 2.md",
+    "Topic 1/Note 1.md",
+    "index.md",
+    "Topic 1/_attachments",
+    "Topic 1/_attachments/Pasted image 20231223212224.png",
+    "blog/posts/Что такое dbt.md"
   ]
 }

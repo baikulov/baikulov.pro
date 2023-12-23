@@ -6,7 +6,7 @@ theme:
 
     # Light mode
     - media: "(prefers-color-scheme: light)"
-      scheme: default
+      scheme: slate
       primary: pink
       accent: indigo
       toggle:
@@ -15,7 +15,7 @@ theme:
 
     # Dark mode
     - media: "(prefers-color-scheme: dark)"
-      scheme: slate
+      scheme: default
       primary: pink
       accent: blue
       toggle:

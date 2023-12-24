@@ -63,7 +63,10 @@ markdown_extensions:
 plugins:
   - search
   - roamlinks
-  - blog
+  - blog:
+      blog_dir: blog
+      blog_toc: true
+      post_dir: "{blog}/posts"
   - rss:
       match_path: blog/posts/.* 
       date_from_meta:

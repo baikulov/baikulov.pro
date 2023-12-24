@@ -11,24 +11,15 @@
             "id": "eb7a650e2bf32f0b",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "3cbf163101ef2a1f",
-            "type": "leaf",
-            "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/posts/blog-post.md",
+                "file": "About/Обо мне.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -94,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog/posts/blog-post.md",
+                "file": "About/Обо мне.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "blog/posts/blog-post.md",
+                "file": "About/Обо мне.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "blog/posts/blog-post.md"
+                "file": "About/Обо мне.md"
               }
             }
           }
@@ -155,19 +146,20 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "3cbf163101ef2a1f",
+  "active": "eb7a650e2bf32f0b",
   "lastOpenFiles": [
-    "blog/posts/hello-world.md",
-    "blog/posts/blog-post.md",
+    "About/_attachments/Pasted image 20231224081256.png",
+    "About/_attachments/Pasted image 20231224074001.png",
+    "About/_attachments/Pasted image 20231223212224.png",
+    "About/Обо мне.md",
+    "Blog/posts/hello-world.md",
+    "About/Note 1.md",
+    "About/Что такое dbt.md",
+    "Blog/posts/blog-post.md",
     "index.md",
     "Pasted image 20231224073832.png",
-    "blog/index.md",
-    "new posts/Что такое dbt.md",
-    "new posts/_attachments/Pasted image 20231224074001.png",
-    "new posts/Note 2.md",
-    "new posts/Note 1.md",
-    "new posts/_attachments",
-    "new posts/_attachments/Pasted image 20231223212224.png",
+    "Blog/index.md",
+    "About/_attachments",
     "blog/posts/Что такое dbt.md"
   ]
 }

@@ -8,4 +8,4 @@ The `index.md` in the `/docs` folder is the homepage you see here.
 
 The folders in `/docs` appear as the main sections on the navigation bar.
 
-The notes appear as pages within these sections. For example, [Note 1](new%20posts/Note%201.md) in `Topic 1`
+The notes appear as pages within these sections. For example, [Note 1](About/Note%201.md) in `Topic 1`

@@ -21,7 +21,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/posts/blog post.md",
+                "file": "blog/posts/hello-world.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog/posts/blog post.md",
+                "file": "blog/posts/hello-world.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "blog/posts/blog post.md",
+                "file": "blog/posts/hello-world.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "blog/posts/blog post.md"
+                "file": "blog/posts/hello-world.md"
               }
             }
           }
@@ -157,9 +157,12 @@
   },
   "active": "3cbf163101ef2a1f",
   "lastOpenFiles": [
-    "blog/posts/hello-world.md",
     "blog/posts/blog post.md",
+    "blog/index.md",
+    "blog/posts/hello-world.md",
     "Topic 1/Что такое dbt.md",
+    "Topic 1/_attachments/Pasted image 20231224074001.png",
+    "Pasted image 20231224073832.png",
     "Topic 1/Note 2.md",
     "Topic 1/Note 1.md",
     "index.md",

@@ -1,1 +1,6 @@
-{}
+{
+  "newFileLocation": "folder",
+  "newFileFolderPath": "blog/posts",
+  "newLinkFormat": "absolute",
+  "attachmentFolderPath": "./_attachments"
+}

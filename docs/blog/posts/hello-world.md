@@ -9,8 +9,6 @@ tags:
   - template
   - how-to
 ---
-ndex
-
 # Hello World Blogpost
 
 Blog excerpt here

@@ -7,8 +7,6 @@ categories:
 tags:
   - how-to
 ---
-
-
 # Hello World Blogpost
 
 Blog excerpt here

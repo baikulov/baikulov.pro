@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "About/Обо мне.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "About/Обо мне.md",
+                "file": "index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "About/Обо мне.md",
+                "file": "index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "About/Обо мне.md"
+                "file": "index.md"
               }
             }
           }
@@ -148,8 +148,9 @@
   },
   "active": "eb7a650e2bf32f0b",
   "lastOpenFiles": [
-    "About/_attachments/7ba4c9f299c6d6fbf6393ae33b1bf3f1.png",
+    "Blog/index.md",
     "About/Обо мне.md",
+    "About/_attachments/7ba4c9f299c6d6fbf6393ae33b1bf3f1.png",
     "About/_attachments/7ba4c9f299c6d6fbf6393ae33b1bf3f1 1.png",
     "Blog/posts/blog-post.md",
     "Blog/posts/_attachments/Pasted image 20231224083733.png",
@@ -167,7 +168,6 @@
     "About/Note 1.md",
     "About/Что такое dbt.md",
     "Pasted image 20231224073832.png",
-    "Blog/index.md",
     "About/attachments",
     "blog/posts/Что такое dbt.md"
   ]

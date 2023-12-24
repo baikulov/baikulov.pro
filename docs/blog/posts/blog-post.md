@@ -7,11 +7,11 @@ categories:
 tags:
   - how-to
 ---
-# Hello World Blogpost
+# Что такое dbt
 
-Blog excerpt here
-
+Это отличный инструмент, чтобы привести в порядок таблицы в вашей базе данных
+![[Blog/posts/attachments/Pasted image 20231224082249.png]]
 <!-- more -->
 
-Rest of blog here
+Если у вас более 20 таблиц в вашей базе данных и на их основе вы строите отчётность, то dbt - то что нужно.
 ...

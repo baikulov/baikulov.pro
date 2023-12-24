@@ -11,9 +11,11 @@
             "id": "eb7a650e2bf32f0b",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "About/attachments/63bab4c248b2c606313164f96b505e36.png"
+                "file": "Blog/posts/blog-post.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -83,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "About/attachments/63bab4c248b2c606313164f96b505e36.png",
+                "file": "Blog/posts/blog-post.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "About/attachments/63bab4c248b2c606313164f96b505e36.png",
+                "file": "Blog/posts/blog-post.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "About/attachments/63bab4c248b2c606313164f96b505e36.png"
+                "file": "Blog/posts/blog-post.md"
               }
             }
           }
@@ -144,12 +146,14 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "125c7af702421861",
+  "active": "eb7a650e2bf32f0b",
   "lastOpenFiles": [
+    "Blog/posts/attachments/Pasted image 20231224082249.png",
+    "Blog/posts/attachments",
+    "About/attachments/63bab4c248b2c606313164f96b505e36.png",
     "Blog/posts/blog-post.md",
     "Blog/posts/hello-world.md",
     "About/Обо мне.md",
-    "About/attachments/63bab4c248b2c606313164f96b505e36.png",
     "About/_attachments/Pasted image 20231224074001.png",
     "About/_attachments/Pasted image 20231223212224.png",
     "About/Note 1.md",

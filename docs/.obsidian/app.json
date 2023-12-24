@@ -2,7 +2,7 @@
   "newFileLocation": "folder",
   "newFileFolderPath": "blog/posts",
   "newLinkFormat": "relative",
-  "attachmentFolderPath": "./attachments",
+  "attachmentFolderPath": "./_attachments",
   "promptDelete": false,
   "alwaysUpdateLinks": true
 }

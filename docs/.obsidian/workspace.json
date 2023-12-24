@@ -19,9 +19,11 @@
             "id": "3cbf163101ef2a1f",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Pasted image 20231224073832.png"
+                "file": "blog/posts/blog-post.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -92,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Pasted image 20231224073832.png",
+                "file": "blog/posts/blog-post.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Pasted image 20231224073832.png",
+                "file": "blog/posts/blog-post.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -132,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Pasted image 20231224073832.png"
+                "file": "blog/posts/blog-post.md"
               }
             }
           }
@@ -155,17 +157,17 @@
   },
   "active": "3cbf163101ef2a1f",
   "lastOpenFiles": [
-    "index.md",
-    "blog/index.md",
     "blog/posts/hello-world.md",
-    "blog/posts/blog post.md",
-    "Topic 1/Что такое dbt.md",
-    "Topic 1/_attachments/Pasted image 20231224074001.png",
+    "blog/posts/blog-post.md",
+    "blog/index.md",
     "Pasted image 20231224073832.png",
-    "Topic 1/Note 2.md",
-    "Topic 1/Note 1.md",
-    "Topic 1/_attachments",
-    "Topic 1/_attachments/Pasted image 20231223212224.png",
+    "index.md",
+    "new posts/Что такое dbt.md",
+    "new posts/_attachments/Pasted image 20231224074001.png",
+    "new posts/Note 2.md",
+    "new posts/Note 1.md",
+    "new posts/_attachments",
+    "new posts/_attachments/Pasted image 20231223212224.png",
     "blog/posts/Что такое dbt.md"
   ]
 }

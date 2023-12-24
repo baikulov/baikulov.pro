@@ -2,7 +2,8 @@
 draft: false
 date: 2023-12-23
 slug: 
-categories: 
+categories:
+  - test
 tags:
   - how-to
 ---

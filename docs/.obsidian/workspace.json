@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "Blog/posts/blog-post.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "index.md",
+                "file": "Blog/posts/blog-post.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "index.md",
+                "file": "Blog/posts/blog-post.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "index.md"
+                "file": "Blog/posts/blog-post.md"
               }
             }
           }
@@ -148,15 +148,15 @@
   },
   "active": "eb7a650e2bf32f0b",
   "lastOpenFiles": [
-    "Blog/index.md",
     "About/Обо мне.md",
+    "index.md",
+    "consistency-report.md",
+    "Blog/index.md",
     "About/_attachments/7ba4c9f299c6d6fbf6393ae33b1bf3f1.png",
     "About/_attachments/7ba4c9f299c6d6fbf6393ae33b1bf3f1 1.png",
     "Blog/posts/blog-post.md",
     "Blog/posts/_attachments/Pasted image 20231224083733.png",
     "Blog/posts/_attachments",
-    "consistency-report.md",
-    "index.md",
     "About/_attachments",
     "About/attachments/asdadasdad ade1easdas.png.md",
     "Blog/posts/hello-world.md",

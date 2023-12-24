@@ -19,11 +19,9 @@
             "id": "3cbf163101ef2a1f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "blog/posts/hello-world.md",
-                "mode": "source",
-                "source": false
+                "file": "Pasted image 20231224073832.png"
               }
             }
           }
@@ -94,7 +92,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog/posts/hello-world.md",
+                "file": "Pasted image 20231224073832.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +109,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "blog/posts/hello-world.md",
+                "file": "Pasted image 20231224073832.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +132,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "blog/posts/hello-world.md"
+                "file": "Pasted image 20231224073832.png"
               }
             }
           }
@@ -157,15 +155,15 @@
   },
   "active": "3cbf163101ef2a1f",
   "lastOpenFiles": [
-    "blog/posts/blog post.md",
+    "index.md",
     "blog/index.md",
     "blog/posts/hello-world.md",
+    "blog/posts/blog post.md",
     "Topic 1/Что такое dbt.md",
     "Topic 1/_attachments/Pasted image 20231224074001.png",
     "Pasted image 20231224073832.png",
     "Topic 1/Note 2.md",
     "Topic 1/Note 1.md",
-    "index.md",
     "Topic 1/_attachments",
     "Topic 1/_attachments/Pasted image 20231223212224.png",
     "blog/posts/Что такое dbt.md"

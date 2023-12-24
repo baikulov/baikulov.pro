@@ -1,7 +1,18 @@
+# 
 site_name: Wiki
 
 theme:
     name: 'material'
+    features:
+      - navigation.tabs
+      - navigation.tracking
+      - navigation.instant
+      - navigation.instant.progress
+      - navigation.instant.prefetch
+      - navigation.tabs.sticky
+      - navigation.path
+      - navigation.indexes
+      - navigation.top
     palette:
 
     # Light mode

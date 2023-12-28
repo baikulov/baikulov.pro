@@ -1,5 +1,5 @@
 {
-  "unique-attachments:rename-all-attachments": [
+  "unique-attachments:rename-only-active-attachments": [
     {
       "modifiers": [
         "Mod",

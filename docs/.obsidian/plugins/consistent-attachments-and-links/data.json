@@ -17,5 +17,5 @@
   ],
   "attachmentsSubfolder": "_attachments",
   "consistencyReportFile": "consistency-report.md",
-  "useBuiltInObsidianLinkCaching": false
+  "useBuiltInObsidianLinkCaching": true
 }

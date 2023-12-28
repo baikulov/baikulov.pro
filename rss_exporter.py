@@ -19,30 +19,33 @@ async def send_to_telegram(title, description, link):
 
     # Удаляем HTML-теги из описания
     soup = BeautifulSoup(description, 'html.parser')
-    cleaned_description = soup.get_text()
 
     # Извлекаем URL изображения из тега <img>
     image_tag = soup.find('img')
     image_url = None
     if image_tag:
-        image_url = urljoin('https://baikulov.github.io/wiki/blog/', image_tag.get('src'))
+        base_url = 'https://baikulov.github.io/wiki/blog/_attachments/'
+        image_url = urljoin(base_url, image_tag.get('src').split("/")[-1])
+
+    cleaned_description = soup.find('p').get_text(strip=True)
 
     # Декодирование HTML-сущностей
     cleaned_description = unescape(cleaned_description)
 
-    # Добавляем изображение к текстовому сообщению (если есть)
-    if image_url:
-        cleaned_description += f'\n[Изображение]({image_url})'
-
     # Используем Markdown-разметку для форматирования сообщения
-    message = f"\n{cleaned_description}\n\n[Читать далее]({link})"
+    message = f"*{title}*\n\n{cleaned_description}\n\n[Читать далее]({link})"
 
     try:
         # Загружаем изображение и отправляем его вместе с сообщением
+       # Загружаем изображение и отправляем его вместе с сообщением
         if image_url:
             print(f"Изображение успешно скачано: {image_url}")
+            print(cleaned_description)
             image_data = requests.get(image_url).content
-            await bot.send_photo(chat_id=CHANNEL_ID, photo=image_data, caption=message, parse_mode=ParseMode.MARKDOWN)
+            if image_url.startswith('https://baikulov.github.io/wiki/blog/'):
+                await bot.send_photo(chat_id=CHANNEL_ID, photo=image_data, caption=message, parse_mode=ParseMode.MARKDOWN)
+            else:
+                await bot.send_message(chat_id=CHANNEL_ID, text=message, parse_mode=ParseMode.MARKDOWN)
         else:
             print("Изображение не найдено.")
             await bot.send_message(chat_id=CHANNEL_ID, text=message, parse_mode=ParseMode.MARKDOWN)

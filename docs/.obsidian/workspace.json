@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "3282319e85257850",
+        "id": "0b8cb25808cd77c5",
         "type": "tabs",
         "children": [
           {
-            "id": "eb7a650e2bf32f0b",
+            "id": "db8849ba4b31775a",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -146,15 +146,16 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "eb7a650e2bf32f0b",
+  "active": "db8849ba4b31775a",
   "lastOpenFiles": [
-    "About/Обо мне.md",
-    "index.md",
-    "consistency-report.md",
     "Blog/index.md",
+    "index.md",
+    "Документация.md",
+    "Blog/posts/blog-post.md",
+    "About/Обо мне.md",
+    "consistency-report.md",
     "About/_attachments/7ba4c9f299c6d6fbf6393ae33b1bf3f1.png",
     "About/_attachments/7ba4c9f299c6d6fbf6393ae33b1bf3f1 1.png",
-    "Blog/posts/blog-post.md",
     "Blog/posts/_attachments/Pasted image 20231224083733.png",
     "Blog/posts/_attachments",
     "About/_attachments",

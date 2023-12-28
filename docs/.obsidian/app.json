@@ -4,5 +4,6 @@
   "newLinkFormat": "relative",
   "attachmentFolderPath": "./_attachments",
   "promptDelete": false,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "useMarkdownLinks": true
 }

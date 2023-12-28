@@ -18,33 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "678f81dd2d1d27e6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Blog/index.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b09a7f02c08284cc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Blog/posts/blog-post.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -171,29 +146,32 @@
       "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "b09a7f02c08284cc",
+  "active": "db8849ba4b31775a",
   "lastOpenFiles": [
-    "About/Обо мне.md",
-    "index.md",
-    "Blog/index.md",
-    "Документация.md",
+    "Blog/posts/_attachments/Pasted image 20231228192515.png",
+    "Blog/posts/_attachments/22b82aa572d559e8e9fe361ef8388e87.png",
     "Blog/posts/blog-post.md",
+    "Blog/posts/_attachments/Pasted image 20231228192445.png",
+    "index.md",
+    "Pasted image 20231228192045.png",
+    "Pasted image 20231228192109.png",
+    "Pasted image 20231228192006.png",
+    "3ab142d0772bfe2e8c82f1ec22fe4ed9.png",
+    "About/Обо мне.md",
+    "Blog/posts/_attachments/664db0f0a174c8f325da14a774294d34.png",
+    "Blog/index.md",
+    "Pasted image 20231228191607.png",
+    "Pasted image 20231228191557.png",
+    "Документация.md",
     "consistency-report.md",
     "About/_attachments/7ba4c9f299c6d6fbf6393ae33b1bf3f1.png",
-    "About/_attachments/7ba4c9f299c6d6fbf6393ae33b1bf3f1 1.png",
-    "Blog/posts/_attachments/664db0f0a174c8f325da14a774294d34.png",
     "Blog/posts/_attachments",
     "About/_attachments",
     "About/attachments/asdadasdad ade1easdas.png.md",
     "Blog/posts/hello-world.md",
-    "Blog/posts/_attachments/00ef15c33dd107336e8dab3353e7186a.png",
     "Blog/posts/attachments",
-    "About/_attachments/63bab4c248b2c606313164f96b505e36.png",
-    "About/_attachments/Pasted image 20231224074001.png",
-    "About/_attachments/Pasted image 20231223212224.png",
     "About/Note 1.md",
     "About/Что такое dbt.md",
-    "Pasted image 20231224073832.png",
     "About/attachments",
     "blog/posts/Что такое dbt.md"
   ]

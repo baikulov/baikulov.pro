@@ -52,6 +52,8 @@ async def send_to_telegram(bot, title, description, link, tags):
         logging.error(f"Ошибка при отправке сообщения: {e}")
         # Добавьте вывод описания статьи для отладки
         logging.error(f"Описание статьи: {description}")
+        logging.error(f"Текст сообщения: {message}")
+        logging.error(f"CHANNEL_ID: {CHANNEL_ID}")
 
 async def check_rss_feed(bot, RSS_URL):
     feed = feedparser.parse(RSS_URL)

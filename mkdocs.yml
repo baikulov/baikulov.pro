@@ -1,7 +1,7 @@
 # docs - https://squidfunk.github.io/mkdocs-material/
 # docs - https://www.mkdocs.org/
-site_name: Wiki
-site_url: https://baikulov.github.io/wiki
+site_name: baikulov.pro
+site_url: https://baikulov.pro
 
 theme:
     name: 'material'

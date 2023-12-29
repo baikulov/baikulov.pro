@@ -4,10 +4,6 @@ on:
   push:
     branches:
       - main
-  workflow_run:
-    workflows: ["ci"]
-    types:
-      - completed
 
 permissions:
   contents: write
@@ -15,24 +11,6 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
-        with:
-          python-version: 3.x
-      - uses: actions/cache@v2
-        with:
-          key: ${{ github.sha }}
-          path: .cache
-      - run: pip install mkdocs-material
-      - run: pip install mkdocs-roamlinks-plugin
-      - run: pip install mkdocs-rss-plugin
-      - run: mkdocs gh-deploy --force
-
-  send_notification:
-    needs: deploy
-    runs-on: ubuntu-latest
-    if: github.event_name == 'workflow_run' && contains(github.event.inputs.job, 'deploy') && github.event.workflow_run.event == 'push'
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -42,14 +20,31 @@ jobs:
         with:
           python-version: 3.9
 
-      - name: Check for new MD files
+      - name: Install dependencies
         run: |
-          if [ -n "$(git diff --name-only ${{ github.sha }}^ ${{ github.sha }} | grep 'blogs/posts/*.md')" ]; then
-            echo "New MD files detected! Sending notification..."
-            python rss_exporter.py
-          else
-            echo "No new MD files detected."
-          fi
+          pip install mkdocs-material
+          pip install mkdocs-roamlinks-plugin
+          pip install mkdocs-rss-plugin
+          mkdocs gh-deploy --force
+
+  send_notification:
+    runs-on: ubuntu-latest
+    needs: deploy
+    if: github.event_name == 'push' && contains(github.event.head_commit.modified, 'blogs/posts/')
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run script
+        run: python rss_exporter.py
         env:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
           CHANNEL_ID: ${{ secrets.CHANNEL_ID }}

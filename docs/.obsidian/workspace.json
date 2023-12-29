@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blog/posts/Что такое airflow.md",
+                "file": "Blog/posts/Что такое openmetadata.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blog/posts/Что такое airflow.md",
+                "file": "Blog/posts/Что такое openmetadata.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blog/posts/Что такое airflow.md",
+                "file": "Blog/posts/Что такое openmetadata.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blog/posts/Что такое airflow.md"
+                "file": "Blog/posts/Что такое openmetadata.md"
               }
             }
           }
@@ -148,9 +148,11 @@
   },
   "active": "db8849ba4b31775a",
   "lastOpenFiles": [
-    "Blog/posts/_attachments/Pasted image 20231229081814.png",
-    "Blog/posts/dbt.md",
+    "Blog/posts/_attachments/fec47aa0465f86a9195ca9e2b77ec280.png",
     "Blog/posts/Что такое airflow.md",
+    "Blog/posts/Что такое openmetadata.md",
+    "Blog/posts/_attachments/Pasted image 20231229081814.png",
+    "Blog/posts/Что такое dbt.md",
     "Без названия.md",
     "Blog/posts/_attachments/59b8d5cdc46a6c3b2f194bb028da2586.png",
     "Blog/posts/_attachments/22d9ee912a1eaaaad33f8c68a01be8e0.png",
@@ -164,7 +166,6 @@
     "Blog/posts/_attachments/Pasted image 20231228192445.png",
     "index.md",
     "Pasted image 20231228192045.png",
-    "Pasted image 20231228192109.png",
     "About/Обо мне.md",
     "Документация.md",
     "consistency-report.md",

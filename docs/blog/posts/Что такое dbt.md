@@ -3,9 +3,9 @@ draft: false
 date: 2023-12-23
 slug: 
 categories:
-  - test
+  - dbt
 tags:
-  - how_to
+  - docs
 ---
 # Что такое dbt
 

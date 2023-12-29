@@ -28,10 +28,18 @@ jobs:
         pip install -r requirements.txt
     
     - name: Debug env variables
+      env:
+        BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+        CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
+        RSS_URL: ${{ secrets.RSS_URL }}
       run: |
-        echo "CHANNEL_ID: $CHANNEL_ID"
-        echo "RSS_URL: $RSS_URL"
-        echo "BOT_TOKEN: $BOT_TOKEN"
+        echo "CHANNEL_ID:  ${{ secrets.CHANNEL_ID }}"
+        echo "RSS_URL: ${{ secrets.RSS_URL }}"
+        echo "BOT_TOKEN: ${{ secrets.BOT_TOKEN }}"
     
     - name: Run script
       run: python rss_exporter.py
+      env:
+        BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+        CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
+        RSS_URL: ${{ secrets.RSS_URL }}

@@ -11,11 +11,11 @@ from urllib.parse import urljoin
 import logging
 import os
 
-# Замените 'YOUR_BOT_TOKEN' на токен вашего бота
+# токен вашего бота
 BOT_TOKEN = os.getenv('BOT_TOKEN')
-# Замените 'YOUR_CHANNEL_ID' на ID вашего канала
+# ID вашего канала
 CHANNEL_ID = os.getenv('CHANNEL_ID')  # Замените на ваш username или ID канала
-# Замените 'YOUR_RSS_URL' на URL вашей RSS-ленты
+# URL вашей RSS-ленты
 RSS_URL = os.getenv('RSS_URL')
 
 logging.basicConfig(level=logging.INFO)
@@ -56,6 +56,7 @@ async def check_rss_feed(bot, RSS_URL):
     feed = feedparser.parse(RSS_URL)
     current_date = datetime.utcnow().date()
     for entry in feed.entries:
+        print(entry)
         pub_date_str = entry.get('published', '')
         date_format = "%a, %d %b %Y %H:%M:%S %z"
         pub_date = datetime.strptime(pub_date_str, date_format).date()

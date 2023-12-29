@@ -50,6 +50,8 @@ async def send_to_telegram(bot, title, description, link, tags):
 
     except TelegramError as e:
         logging.error(f"Ошибка при отправке сообщения: {e}")
+        # Добавьте вывод описания статьи для отладки
+        logging.error(f"Описание статьи: {description}")
 
 async def check_rss_feed(bot, RSS_URL):
     feed = feedparser.parse(RSS_URL)

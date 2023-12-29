@@ -1,5 +1,5 @@
 import asyncio
-from datetime import datetime
+from datetime import datetime, timedelta, timezone
 import feedparser
 from telegram import Bot
 from telegram.constants import ParseMode
@@ -54,13 +54,21 @@ async def send_to_telegram(bot, title, description, link, tags):
 
 async def check_rss_feed(bot, RSS_URL):
     feed = feedparser.parse(RSS_URL)
-    current_date = datetime.utcnow().date()
+    
     if feed.entries:
         entry = feed.entries[0]
         pub_date_str = entry.get('published', '')
         date_format = "%a, %d %b %Y %H:%M:%S %z"
-        pub_date = datetime.strptime(pub_date_str, date_format).date()
-        if pub_date == current_date:
+        pub_date = datetime.strptime(pub_date_str, date_format)
+        
+        # Make current_datetime offset-aware by adding timezone information
+        current_datetime = datetime.now(timezone.utc)
+        
+        # Определите временной интервал в 10 минут
+        time_interval = timedelta(minutes=10)
+        
+        # Проверьте, если разница между pub_date и current_datetime меньше 10 минут
+        if (current_datetime - pub_date) < time_interval:
             tags = [category.term for category in entry.get('tags', [])]
             await send_to_telegram(bot, entry.title, entry.description, entry.link, tags=tags)
 

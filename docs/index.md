@@ -24,6 +24,7 @@
 
 <img align="left" alt="DBT" title="DBT" src="https://img.shields.io/badge/dbt-151719?style=for-the-badge&logo=dbt" />
 
+
 ### Также владею
 <img align="left" alt="Google Analytics" title="Google Analytics" src="https://img.shields.io/badge/Google_Analytics-151719?style=for-the-badge&logo=GoogleAnalytics" />
 

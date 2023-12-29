@@ -1,7 +1,7 @@
 name: telegram_notification
 on:
   workflow_run:
-    workflows: ["pages-build-deployment", "ci"]
+    workflows: ["pages-build-deployment"]
     types:
       - completed
 jobs:

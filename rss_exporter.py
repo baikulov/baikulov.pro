@@ -3,7 +3,7 @@ import feedparser
 from telegram import Bot
 from telegram.constants import ParseMode
 from telegram.error import TelegramError
-from html import unescape
+from html import unescape, escape
 from bs4 import BeautifulSoup
 import requests
 from urllib.parse import urljoin
@@ -31,12 +31,12 @@ async def send_to_telegram(bot, title, description, link, tags):
     cleaned_description = soup.find('p').get_text(strip=True)
 
     # Декодирование HTML-сущностей
-    cleaned_description = unescape(cleaned_description)
+    cleaned_description = escape(cleaned_description)
 
     tags_text = " ".join([f"#{tag}" for tag in tags]) if tags else ""
 
     # Используем Markdown-разметку для форматирования сообщения
-    message = f"❗*{title}*\n{tags_text}\n\n{cleaned_description}\n\n[Читать далее]({link})"
+    message = f"*{title}*\n{tags_text}\n\n{cleaned_description}\n\n[Читать далее]({link})"
 
     try:
         if image_url:

@@ -1,13 +1,13 @@
 ---
 draft: false
-date: 2023-12-28
+date: 2023-12-29
 slug: 
 categories:
-  - openmetadata
+  - powerbi
 tags:
   - docs
 ---
-# Что такое openmetadata
+# Что такое PowerBI
 ![](_attachments/fec47aa0465f86a9195ca9e2b77ec280.png)
 Это инструмент помогает собрать все инструменты инфраструктуры в единое целое.
 По сути, это единый центр документации всего аналитического проекта.

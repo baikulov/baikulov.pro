@@ -37,7 +37,7 @@ async def send_to_telegram(bot, title, description, link, tags):
     tags_text = " ".join([f"#{tag}" for tag in escaped_tags]) if escaped_tags else ""
 
     # Используем Markdown-разметку для форматирования сообщения
-    message = f"❗*{title.upper()}*\n{tags_text}\n\n{cleaned_description}\n\n[Читать на сайте]({link})"
+    message = f"*{title.upper()}*❗\n{tags_text}\n\n{cleaned_description}\n\n[Читать на сайте]({link})"
 
     try:
         if image_url:

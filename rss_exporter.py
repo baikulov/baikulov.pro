@@ -26,7 +26,7 @@ async def send_to_telegram(bot, title, description, link, tags):
 
     # Извлекаем URL изображения из тега <img>
     image_tag = soup.find('img')
-    image_url = urljoin('https://baikulov.github.io/wiki/blog/_attachments/', image_tag.get('src').split("/")[-1]) if image_tag else None
+    image_url = urljoin('baikulov.pro/blog/_attachments/', image_tag.get('src').split("/")[-1]) if image_tag else None
 
     cleaned_description = soup.find('p').get_text(strip=True)
 
@@ -43,7 +43,7 @@ async def send_to_telegram(bot, title, description, link, tags):
         if image_url:
             logging.info(f"Изображение успешно скачано: {image_url}")
             image_data = requests.get(image_url).content
-            send_function = bot.send_photo if image_url.startswith('https://baikulov.github.io/wiki/blog/') else bot.send_message
+            send_function = bot.send_photo if image_url.startswith('baikulov.pro/blog/') else bot.send_message
             await send_function(chat_id=CHANNEL_ID, photo=image_data, caption=message, parse_mode=ParseMode.MARKDOWN)
         else:
             logging.warning("Изображение не найдено.")

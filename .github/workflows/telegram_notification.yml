@@ -26,5 +26,5 @@ jobs:
       run: python rss_exporter.py
       env:
         BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
-        CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
-        RSS_URL: ${{ secrets.RSS_URL }}
+        CHANNEL_ID: ${{ env.CHANNEL_ID }}
+        RSS_URL: ${{ env.RSS_URL }}

@@ -12,7 +12,6 @@ import os
 
 # Замените 'YOUR_BOT_TOKEN' на токен вашего бота
 BOT_TOKEN = os.getenv('BOT_TOKEN')
-print(BOT_TOKEN)
 # Замените 'YOUR_CHANNEL_ID' на ID вашего канала
 CHANNEL_ID = os.getenv('CHANNEL_ID')  # Замените на ваш username или ID канала
 # Замените 'YOUR_RSS_URL' на URL вашей RSS-ленты
@@ -33,10 +32,11 @@ async def send_to_telegram(bot, title, description, link, tags):
     # Декодирование HTML-сущностей
     cleaned_description = escape(cleaned_description)
 
-    tags_text = " ".join([f"#{tag}" for tag in tags]) if tags else ""
+    escaped_tags = [str(tag).replace('_', r'\_').replace('*', r'\*').replace('[', r'\[').replace(']', r'\]') for tag in tags]
+    tags_text = " ".join([f"#{tag}" for tag in escaped_tags]) if escaped_tags else ""
 
     # Используем Markdown-разметку для форматирования сообщения
-    message = f"{title}\n{tags_text}\n\n{cleaned_description}\n\n[Читать далее]({link})"
+    message = f"❗*{title.upper()}*\n{tags_text}\n\n{cleaned_description}\n\n[Читать на сайте]({link})"
 
     try:
         if image_url:
@@ -50,21 +50,13 @@ async def send_to_telegram(bot, title, description, link, tags):
 
     except TelegramError as e:
         logging.error(f"Ошибка при отправке сообщения: {e}")
-        # Добавьте вывод описания статьи для отладки
-        logging.error(f"Описание статьи: {description}")
-        logging.error(f"Текст сообщения: {message}")
-        logging.error(f"CHANNEL_ID: {CHANNEL_ID}")
 
 async def check_rss_feed(bot, RSS_URL):
     feed = feedparser.parse(RSS_URL)
     for entry in feed.entries:
-        if not is_post_published(entry.link):
-            tags = [category.term.lower() for category in entry.get('tags', [])]
-            await send_to_telegram(bot, entry.title, entry.description, entry.link, tags=tags)
+        tags = [category.term for category in entry.get('tags', [])]
+        await send_to_telegram(bot, entry.title, entry.description, entry.link, tags=tags)
 
-def is_post_published(link):
-    # Ваш код для проверки, была ли запись уже опубликована
-    pass
 
 async def main():
     bot = Bot(token=BOT_TOKEN)

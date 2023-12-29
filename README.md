@@ -9,7 +9,7 @@ This template gives you an easy (and automated) way to publish your Obsidian not
 With this template, you get these **out-of-the-box**:
 
 - an awesome website based on Material theme, complete with a search bar (Checkout this template repo published [here](https://jobindjohn.github.io/obsidian-publish-mkdocs/))
-![](2021-11-22-22-49-26.png)
+![](_attachments/366080a9bfde7233ebd53d0e002f2c6a.png)
 - get the Obsidian/Roam style `[[wikilinks]]` from your vault in your published notes
 - Toggle between light and dark mode
 - Blog folder
@@ -18,7 +18,7 @@ With this template, you get these **out-of-the-box**:
 
 1. Create a **new github repository using this template**. Click the green button at the top or use [this link](https://github.com/jobindjohn/obsidian-publish-mkdocs/generate). 
 
-![](2021-11-22-22-54-02.png)
+![](_attachments/3e535ec00dd01c5ed11699e81c23ec0c.png)
 
 2.  **Give a name** to your repository. By default your notes will be published at `<https://username.github.io/repo-name/>`
      - Copy only the `main` branch while creating the repo from the template
@@ -28,7 +28,7 @@ With this template, you get these **out-of-the-box**:
 5. Commit and **push** the changes. Github actions will take care of the rest, publishing your notes using [MkDocs](https://www.mkdocs.org/), with the [Material theme](https://squidfunk.github.io/mkdocs-material/). 
 6. Go to `Settings > Pages` and select the select the **Source** as your `gh-pages` branch.
 
-![](2021-11-22-22-52-49.png)
+![](_attachments/5db63fbf79aeceef3faedc875a17b9ad.png)
 
 **Not working for you?** Open an [issue](https://github.com/jobindjohn/obsidian-publish-mkdocs/issues/new/choose) and let me know what went wrong.
 

@@ -1,4 +1,5 @@
 import asyncio
+from datetime import datetime
 import feedparser
 from telegram import Bot
 from telegram.constants import ParseMode
@@ -53,9 +54,12 @@ async def send_to_telegram(bot, title, description, link, tags):
 
 async def check_rss_feed(bot, RSS_URL):
     feed = feedparser.parse(RSS_URL)
+    current_date = datetime.utcnow().date()
     for entry in feed.entries:
-        tags = [category.term for category in entry.get('tags', [])]
-        await send_to_telegram(bot, entry.title, entry.description, entry.link, tags=tags)
+        pub_date = datetime.strptime(entry.get('pubDate', ''), '%a, %d %b %Y %H:%M:%S %z').date()
+        if pub_date == current_date:
+            tags = [category.term for category in entry.get('tags', [])]
+            await send_to_telegram(bot, entry.title, entry.description, entry.link, tags=tags)
 
 
 async def main():

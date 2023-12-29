@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blog/posts/blog-post.md",
+                "file": "Blog/posts/Что такое airflow.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blog/posts/blog-post.md",
+                "file": "Blog/posts/Что такое airflow.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blog/posts/blog-post.md",
+                "file": "Blog/posts/Что такое airflow.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blog/posts/blog-post.md"
+                "file": "Blog/posts/Что такое airflow.md"
               }
             }
           }
@@ -148,9 +148,12 @@
   },
   "active": "db8849ba4b31775a",
   "lastOpenFiles": [
+    "Blog/posts/_attachments/Pasted image 20231229081814.png",
+    "Blog/posts/dbt.md",
+    "Blog/posts/Что такое airflow.md",
+    "Без названия.md",
     "Blog/posts/_attachments/59b8d5cdc46a6c3b2f194bb028da2586.png",
     "Blog/posts/_attachments/22d9ee912a1eaaaad33f8c68a01be8e0.png",
-    "Blog/posts/blog-post.md",
     "Blog/posts/_attachments/28d1fbc2eeb4d81a284be3fa425be02b.png",
     "Blog/posts/test.md",
     "Blog/posts/_attachments/Pasted image 20231228193155.png",

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Обо мне.md",
+                "file": "Blog/posts/Как работать с GIT.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Обо мне.md",
+                "file": "Blog/posts/Как работать с GIT.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Обо мне.md",
+                "file": "Blog/posts/Как работать с GIT.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Обо мне.md"
+                "file": "Blog/posts/Как работать с GIT.md"
               }
             }
           }
@@ -148,12 +148,14 @@
   },
   "active": "db8849ba4b31775a",
   "lastOpenFiles": [
-    "About.md",
+    "Blog/posts/_attachments/f2181abbcd5f03e83004963c7baa17bf.png",
+    "Blog/posts/Что такое airflow.md",
+    "Blog/posts/Как работать с GIT.md",
     "Обо мне.md",
+    "About.md",
     "Blog/posts/Что такое dbt.md",
     "Blog/posts/Что такое openmetadata.md",
     "Blog/posts/airflow.md",
-    "Blog/posts/Что такое airflow.md",
     "Blog/posts/_attachments/fec47aa0465f86a9195ca9e2b77ec280.png",
     "Blog/posts/_attachments/Pasted image 20231229081814.png",
     "Без названия.md",

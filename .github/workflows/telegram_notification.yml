@@ -21,7 +21,17 @@ jobs:
     - name: Install dependencies
       run: |
         pip install -r requirements.txt
-
+    
+    - name: Debug env variables
+      run: |
+        echo "CHANNEL_ID: $CHANNEL_ID"
+        echo "RSS_URL: $RSS_URL"
+        echo "BOT_TOKEN: $BOT_TOKEN"
+      env:
+        BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+        CHANNEL_ID: ${{ env.CHANNEL_ID }}
+        RSS_URL: ${{ env.RSS_URL }}
+    
     - name: Run script
       run: python rss_exporter.py
       env:

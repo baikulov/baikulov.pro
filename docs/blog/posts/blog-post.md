@@ -5,7 +5,7 @@ slug:
 categories:
   - test
 tags:
-  - how-to
+  - how_to
 ---
 # Что такое dbt
 

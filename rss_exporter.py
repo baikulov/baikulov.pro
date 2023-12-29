@@ -55,8 +55,8 @@ async def send_to_telegram(bot, title, description, link, tags):
 async def check_rss_feed(bot, RSS_URL):
     feed = feedparser.parse(RSS_URL)
     current_date = datetime.utcnow().date()
-    for entry in feed.entries:
-        print(entry)
+    if feed.entries:
+        entry = feed.entries[0]
         pub_date_str = entry.get('published', '')
         date_format = "%a, %d %b %Y %H:%M:%S %z"
         pub_date = datetime.strptime(pub_date_str, date_format).date()

@@ -68,7 +68,7 @@ async def check_rss_feed(bot, RSS_URL):
         time_interval = timedelta(minutes=10)
         
         # Проверьте, если разница между pub_date и current_datetime меньше 10 минут
-        if (current_datetime - pub_date) < time_interval:
+        if current_datetime.date() == pub_date.date():
             tags = [category.term for category in entry.get('tags', [])]
             await send_to_telegram(bot, entry.title, entry.description, entry.link, tags=tags)
 

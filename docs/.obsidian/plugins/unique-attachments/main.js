@@ -1534,7 +1534,7 @@ class ConsistentAttachmentsAndLinks extends obsidian.Plugin {
             let validPath = this.lh.getFilePathWithRenamedBaseName(filePath, validBaseName);
             let targetFileAlreadyExists = yield this.app.vault.adapter.exists(validPath);
             if (targetFileAlreadyExists) {
-                //if file content is the same in both files, one of them will be deleted			
+                //if file content is the same in both files, one of them will be deleted
                 let validAnotherFileBaseName = yield this.generateValidBaseName(validPath);
                 if (validAnotherFileBaseName != validBaseName) {
                     console.warn("Unique attachments: cant rename file \n   " + filePath + "\n    to\n   " + validPath + "\n   Another file exists with the same (target) name but different content.");
@@ -1632,7 +1632,7 @@ class ConsistentAttachmentsAndLinks extends obsidian.Plugin {
             let validPath = this.lh.getFilePathWithRenamedBaseName(file.path, validBaseName);
             let targetFileAlreadyExists = yield this.app.vault.adapter.exists(validPath);
             if (targetFileAlreadyExists) {
-                //if file content is the same in both files, one of them will be deleted			
+                //if file content is the same in both files, one of them will be deleted
                 let validAnotherFileBaseName = yield this.generateValidBaseName(validPath);
                 if (validAnotherFileBaseName != validBaseName) {
                     console.warn("Unique attachments: cant rename file \n   " + file.path + "\n    to\n   " + validPath + "\n   Another file exists with the same (target) name but different content.");
@@ -1645,7 +1645,7 @@ class ConsistentAttachmentsAndLinks extends obsidian.Plugin {
                 try {
                     // Obsidian can not replace one file to another
                     let oldfile = this.app.vault.getAbstractFileByPath(validPath);
-                    // so just silently delete the old file 
+                    // so just silently delete the old file
                     yield this.app.vault.delete(oldfile);
                     // and give the same name to the new one
                     yield this.app.fileManager.renameFile(file, validPath);

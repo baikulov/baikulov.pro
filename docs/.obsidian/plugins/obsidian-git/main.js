@@ -32766,7 +32766,7 @@ var ObsidianGitSettingsTab = class extends import_obsidian8.PluginSettingTab {
         });
       }).descEl.innerHTML = `
                     The CSS color of the gutter text.<br/>
-                    
+
                     It is higly recommended to use
                     <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties">
                     CSS variables</a>

@@ -1745,7 +1745,7 @@ class ConsistentAttachmentsAndLinks extends obsidian.Plugin {
                 name: 'Check Vault consistency',
                 callback: () => this.checkConsistency()
             });
-            // make regex from given strings 
+            // make regex from given strings
             this.settings.ignoreFilesRegex = this.settings.ignoreFiles.map(val => RegExp(val));
             this.lh = new LinksHandler(this.app, "Consistent Attachments and Links: ", this.settings.ignoreFolders, this.settings.ignoreFilesRegex);
             this.fh = new FilesHandler(this.app, this.lh, "Consistent Attachments and Links: ", this.settings.ignoreFolders, this.settings.ignoreFilesRegex);

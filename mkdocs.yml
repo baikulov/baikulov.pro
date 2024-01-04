@@ -5,6 +5,9 @@ site_url: https://baikulov.pro
 
 theme:
     name: 'material'
+    custom_dir: docs
+    custom_templates:
+      - gtm.html
     features:
       - navigation.tabs
       - navigation.tracking
